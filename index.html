@@ -429,7 +429,7 @@
             </div>
 
         </section>
-<!-- OPERATORS SECTION (ENHANCED) -->
+        <!-- OPERATORS SECTION (ENHANCED) -->
         <section id="operators" class="mb-16 scroll-mt-20">
             <div class="flex items-center mb-6">
                 <div class="bg-emerald-100 p-3 rounded-lg mr-4 text-emerald-600">
@@ -442,92 +442,155 @@
                 
                 <!-- Arithmetic -->
                 <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-                    <div class="bg-slate-50 px-6 py-3 border-b border-slate-200 font-bold text-slate-800">a. Arithmetic Operators</div>
-                    <div class="p-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
-                        <div class="p-2 border rounded text-center"><code class="text-lg font-bold text-blue-600">+</code><br>Addition</div>
-                        <div class="p-2 border rounded text-center"><code class="text-lg font-bold text-blue-600">-</code><br>Subtraction</div>
-                        <div class="p-2 border rounded text-center"><code class="text-lg font-bold text-blue-600">*</code><br>Multiplication</div>
-                        <div class="p-2 border rounded text-center"><code class="text-lg font-bold text-blue-600">/</code><br>Division (Float)</div>
-                        <div class="p-2 border rounded text-center bg-blue-50"><code class="text-lg font-bold text-purple-600">%</code><br>Modulus (Remainder)</div>
-                        <div class="p-2 border rounded text-center bg-blue-50"><code class="text-lg font-bold text-purple-600">**</code><br>Exponent (Power)</div>
-                        <div class="p-2 border rounded text-center bg-blue-50"><code class="text-lg font-bold text-purple-600">//</code><br>Floor Division</div>
+                    <div class="bg-slate-50 px-6 py-3 border-b border-slate-200 font-bold text-slate-800 flex justify-between items-center">
+                        <span>a. Arithmetic Operators</span>
+                        <span class="text-xs font-normal text-slate-500 bg-white border px-2 py-1 rounded">Math</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm mb-6">
+                            <div class="p-3 border rounded-lg text-center hover:bg-slate-50 transition"><code class="text-xl font-bold text-blue-600 block mb-1">+</code>Addition</div>
+                            <div class="p-3 border rounded-lg text-center hover:bg-slate-50 transition"><code class="text-xl font-bold text-blue-600 block mb-1">-</code>Subtraction</div>
+                            <div class="p-3 border rounded-lg text-center hover:bg-slate-50 transition"><code class="text-xl font-bold text-blue-600 block mb-1">*</code>Multiplication</div>
+                            <div class="p-3 border rounded-lg text-center hover:bg-slate-50 transition"><code class="text-xl font-bold text-blue-600 block mb-1">/</code>Division (Float)</div>
+                            <div class="p-3 border rounded-lg text-center bg-blue-50/50"><code class="text-xl font-bold text-purple-600 block mb-1">%</code>Modulus (Rem)</div>
+                            <div class="p-3 border rounded-lg text-center bg-blue-50/50"><code class="text-xl font-bold text-purple-600 block mb-1">**</code>Exponent</div>
+                            <div class="p-3 border rounded-lg text-center bg-blue-50/50"><code class="text-xl font-bold text-purple-600 block mb-1">//</code>Floor Div</div>
+                        </div>
+                        
+                        <!-- Tricky Arithmetic Note -->
+                        <div class="bg-slate-900 rounded-lg p-4 font-mono text-sm text-gray-300">
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div>
+                                    <span class="text-purple-400"># Division Types</span><br>
+                                    <span class="text-yellow-300">print</span>(10 / 3)  <span class="text-gray-500"># 3.3333 (Float)</span><br>
+                                    <span class="text-yellow-300">print</span>(10 // 3) <span class="text-gray-500"># 3 (Integer)</span>
+                                </div>
+                                <div>
+                                    <span class="text-purple-400"># Modulus (Remainder)</span><br>
+                                    <span class="text-yellow-300">print</span>(10 % 3)  <span class="text-gray-500"># 1 (Remainder of 10/3)</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Comparison -->
                 <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
-                    <div class="bg-slate-50 px-6 py-3 border-b border-slate-200 font-bold text-slate-800">b. Comparison Operators (Returns Boolean)</div>
-                    <div class="p-6 grid grid-cols-2 md:grid-cols-3 gap-4 text-sm font-mono">
-                        <div class="flex justify-between p-2 border rounded"><span>Equal</span> <span class="text-pink-600">==</span></div>
-                        <div class="flex justify-between p-2 border rounded"><span>Not Equal</span> <span class="text-pink-600">!=</span></div>
-                        <div class="flex justify-between p-2 border rounded"><span>Greater</span> <span class="text-pink-600">></span></div>
-                        <div class="flex justify-between p-2 border rounded"><span>Less</span> <span class="text-pink-600"><</span></div>
-                        <div class="flex justify-between p-2 border rounded"><span>Greater/Eq</span> <span class="text-pink-600">>=</span></div>
-                        <div class="flex justify-between p-2 border rounded"><span>Less/Eq</span> <span class="text-pink-600"><=</span></div>
+                    <div class="bg-slate-50 px-6 py-3 border-b border-slate-200 font-bold text-slate-800 flex justify-between items-center">
+                        <span>b. Comparison Operators</span>
+                        <span class="text-xs font-normal text-slate-500 bg-white border px-2 py-1 rounded">Returns Boolean</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm font-mono mb-4">
+                            <div class="flex justify-between items-center p-2 border rounded hover:bg-pink-50 transition"><span class="font-sans text-slate-600">Equal</span> <span class="text-pink-600 font-bold">==</span></div>
+                            <div class="flex justify-between items-center p-2 border rounded hover:bg-pink-50 transition"><span class="font-sans text-slate-600">Not Equal</span> <span class="text-pink-600 font-bold">!=</span></div>
+                            <div class="flex justify-between items-center p-2 border rounded hover:bg-pink-50 transition"><span class="font-sans text-slate-600">Greater</span> <span class="text-pink-600 font-bold">></span></div>
+                            <div class="flex justify-between items-center p-2 border rounded hover:bg-pink-50 transition"><span class="font-sans text-slate-600">Less</span> <span class="text-pink-600 font-bold"><</span></div>
+                            <div class="flex justify-between items-center p-2 border rounded hover:bg-pink-50 transition"><span class="font-sans text-slate-600">Greater/Eq</span> <span class="text-pink-600 font-bold">>=</span></div>
+                            <div class="flex justify-between items-center p-2 border rounded hover:bg-pink-50 transition"><span class="font-sans text-slate-600">Less/Eq</span> <span class="text-pink-600 font-bold"><=</span></div>
+                        </div>
+                         <div class="bg-gray-100 p-2 rounded text-xs text-slate-600 text-center">
+                            Example: <code>age >= 18</code> evaluates to <code>True</code> or <code>False</code>.
+                        </div>
                     </div>
                 </div>
 
-                <!-- Logical & Identity -->
+                <!-- Logical & Assignment Grid -->
                 <div class="grid md:grid-cols-2 gap-6">
+                    
+                    <!-- Logical -->
                     <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
-                        <h3 class="font-bold text-slate-800 mb-3">d. Logical Operators</h3>
-                        <ul class="space-y-2 text-sm">
-                            <li class="flex items-center"><code class="bg-gray-100 px-2 py-1 rounded mr-2 text-purple-600">and</code> Returns True if <strong>both</strong> are true.</li>
-                            <li class="flex items-center"><code class="bg-gray-100 px-2 py-1 rounded mr-2 text-purple-600">or</code> Returns True if <strong>at least one</strong> is true.</li>
-                            <li class="flex items-center"><code class="bg-gray-100 px-2 py-1 rounded mr-2 text-purple-600">not</code> Reverses the result (True -> False).</li>
+                        <div class="flex justify-between items-center mb-4">
+                             <h3 class="font-bold text-slate-800">d. Logical Operators</h3>
+                             <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded">Logic</span>
+                        </div>
+                        <ul class="space-y-3 text-sm">
+                            <li class="p-2 border rounded-lg bg-slate-50">
+                                <div class="flex items-center mb-1"><code class="text-purple-600 font-bold mr-2">and</code> <span class="text-slate-500 text-xs uppercase tracking-wide">Both True</span></div>
+                                <code class="text-xs text-slate-600">True and False -> False</code>
+                            </li>
+                            <li class="p-2 border rounded-lg bg-slate-50">
+                                <div class="flex items-center mb-1"><code class="text-purple-600 font-bold mr-2">or</code> <span class="text-slate-500 text-xs uppercase tracking-wide">At least one</span></div>
+                                <code class="text-xs text-slate-600">True or False -> True</code>
+                            </li>
+                            <li class="p-2 border rounded-lg bg-slate-50">
+                                <div class="flex items-center mb-1"><code class="text-purple-600 font-bold mr-2">not</code> <span class="text-slate-500 text-xs uppercase tracking-wide">Reverse</span></div>
+                                <code class="text-xs text-slate-600">not True -> False</code>
+                            </li>
                         </ul>
                     </div>
+
+                    <!-- Assignment -->
                     <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
-                        <h3 class="font-bold text-slate-800 mb-3">e. Membership & f. Identity</h3>
-                        <ul class="space-y-2 text-sm">
-                            <li class="flex items-center"><code class="bg-gray-100 px-2 py-1 rounded mr-2 text-blue-600">in</code> Checks if value exists in a sequence (list/str).</li>
-                            <li class="flex items-center"><code class="bg-gray-100 px-2 py-1 rounded mr-2 text-blue-600">is</code> Checks if two variables point to the <strong>same object</strong> in memory.</li>
-                        </ul>
+                        <div class="flex justify-between items-center mb-4">
+                             <h3 class="font-bold text-slate-800">c. Assignment</h3>
+                             <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Shortcuts</span>
+                        </div>
+                        <div class="bg-gray-900 rounded p-4 font-mono text-sm text-white space-y-3">
+                            <div>
+                                <span class="text-gray-500"># Basic Assignment</span><br>
+                                x = <span class="text-blue-300">5</span>
+                            </div>
+                            <div class="border-t border-gray-700 pt-3">
+                                <span class="text-gray-500"># Add & Assign</span><br>
+                                x += <span class="text-blue-300">3</span> <span class="text-gray-500"># x is now 8</span>
+                            </div>
+                            <div class="border-t border-gray-700 pt-3">
+                                <span class="text-gray-500"># Subtract & Assign</span><br>
+                                x -= <span class="text-blue-300">1</span> <span class="text-gray-500"># x is now 7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Membership & Identity -->
+                 <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                    <div class="bg-slate-50 px-6 py-3 border-b border-slate-200 font-bold text-slate-800">e. Membership & f. Identity</div>
+                    <div class="p-6 grid md:grid-cols-2 gap-6">
+                        <div>
+                             <h4 class="font-semibold text-slate-700 text-sm mb-3 text-center">Membership (<code class="text-blue-600">in</code>)</h4>
+                             <div class="bg-gray-900 rounded p-3 font-mono text-xs text-white">
+                                nums = [<span class="text-blue-300">1</span>, <span class="text-blue-300">2</span>, <span class="text-blue-300">3</span>]<br>
+                                <span class="text-yellow-300">print</span>(<span class="text-blue-300">2</span> <span class="text-purple-400">in</span> nums) <span class="text-gray-500"># True</span><br>
+                                <span class="text-yellow-300">print</span>(<span class="text-blue-300">5</span> <span class="text-purple-400">not in</span> nums) <span class="text-gray-500"># True</span>
+                            </div>
+                        </div>
+                        <div>
+                             <h4 class="font-semibold text-slate-700 text-sm mb-3 text-center">Identity (<code class="text-blue-600">is</code>)</h4>
+                             <div class="bg-gray-900 rounded p-3 font-mono text-xs text-white">
+                                x = <span class="text-purple-400">None</span><br>
+                                <span class="text-yellow-300">print</span>(x <span class="text-purple-400">is None</span>) <span class="text-gray-500"># True</span><br>
+                                <span class="text-yellow-300">print</span>(x <span class="text-purple-400">is not</span> <span class="text-blue-300">5</span>) <span class="text-gray-500"># True</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- Assignment -->
-                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
-                    <h3 class="font-bold text-slate-800 mb-3">c. Assignment Operators</h3>
-                    <div class="bg-gray-900 rounded p-4 font-mono text-sm text-white grid grid-cols-2 gap-4">
-                        <div>
-                            x = <span class="text-blue-300">5</span> <span class="text-gray-500"># Basic</span><br>
-                            x += <span class="text-blue-300">3</span> <span class="text-gray-500"># Same as x = x + 3</span>
-                        </div>
-                        <div>
-                            x -= <span class="text-blue-300">1</span> <span class="text-gray-500"># Same as x = x - 1</span><br>
-                            x *= <span class="text-blue-300">2</span> <span class="text-gray-500"># Same as x = x * 2</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- NEW: Additional Operator Notes -->
-                <div class="bg-slate-100 rounded-xl p-6 border border-slate-200">
-                     <h3 class="font-bold text-slate-800 mb-4 flex items-center">
-                        <i class="fas fa-info-circle text-blue-500 mr-2"></i> Additional Operator Notes
+                <!-- Additional Notes (Keep mostly same but improved styling) -->
+                <div class="bg-slate-800 rounded-xl p-6 text-slate-200 border border-slate-700 shadow-lg">
+                     <h3 class="font-bold text-white mb-4 flex items-center">
+                        <i class="fas fa-lightbulb text-yellow-400 mr-2"></i> Pro Tips
                     </h3>
-                    <div class="grid md:grid-cols-2 gap-6">
+                    <div class="grid md:grid-cols-2 gap-8">
                         <div>
-                             <h4 class="font-semibold text-slate-700 text-sm mb-2">Operator Precedence (PEMDAS)</h4>
-                             <p class="text-xs text-slate-600 mb-2">Python processes math in this order:</p>
-                             <ol class="list-decimal list-inside text-xs text-slate-700 font-mono space-y-1">
-                                 <li>() <span class="text-gray-400">// Parentheses</span></li>
-                                 <li>** <span class="text-gray-400">// Exponent</span></li>
-                                 <li>*, /, //, % <span class="text-gray-400">// Mult/Div</span></li>
-                                 <li>+, - <span class="text-gray-400">// Add/Sub</span></li>
+                             <h4 class="font-semibold text-slate-300 text-sm mb-2 border-b border-slate-600 pb-1">Operator Precedence (PEMDAS)</h4>
+                             <ol class="list-decimal list-inside text-xs text-slate-400 font-mono space-y-2 mt-3">
+                                 <li><span class="text-yellow-300">()</span> Parentheses (Highest)</li>
+                                 <li><span class="text-yellow-300">**</span> Exponent</li>
+                                 <li><span class="text-yellow-300">*, /, //, %</span> Multiply/Divide</li>
+                                 <li><span class="text-yellow-300">+, -</span> Add/Subtract (Lowest)</li>
                              </ol>
                         </div>
                         <div>
-                            <h4 class="font-semibold text-slate-700 text-sm mb-2">Important: Equality (==) vs Identity (is)</h4>
-                            <p class="text-xs text-slate-600 mb-2">They look similar but work differently:</p>
-                             <ul class="text-xs text-slate-700 space-y-2">
-                                 <li class="bg-white p-2 rounded border border-slate-200">
-                                     <strong class="text-pink-600">==</strong> Checks if values are the same.<br>
-                                     <code class="text-gray-500">[1,2] == [1,2] # True</code>
+                            <h4 class="font-semibold text-slate-300 text-sm mb-2 border-b border-slate-600 pb-1">Equality (==) vs Identity (is)</h4>
+                             <ul class="text-xs text-slate-400 space-y-3 mt-3">
+                                 <li>
+                                     <strong class="text-pink-400">==</strong> checks <em>values</em>.<br>
+                                     <span class="text-slate-500">Use for numbers, strings, lists.</span>
                                  </li>
-                                 <li class="bg-white p-2 rounded border border-slate-200">
-                                     <strong class="text-blue-600">is</strong> Checks if they are the exact same memory object.<br>
-                                     <code class="text-gray-500">[1,2] is [1,2] # False (Two different lists)</code>
+                                 <li>
+                                     <strong class="text-blue-400">is</strong> checks <em>memory address</em>.<br>
+                                     <span class="text-slate-500">Use for <code>None</code>, <code>True</code>, <code>False</code>.</span>
                                  </li>
                              </ul>
                         </div>

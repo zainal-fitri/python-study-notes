@@ -38,11 +38,12 @@
                     <i class="fab fa-python text-3xl text-blue-600 mr-3"></i>
                     <span class="font-bold text-xl tracking-tight text-slate-900">Python Basics <span class="text-slate-400 font-normal ml-2">Reference Guide</span></span>
                 </div>
-                <div class="hidden md:flex items-center space-x-8">
+                <div class="hidden md:flex items-center space-x-6">
                     <a href="#intro" class="text-slate-600 hover:text-blue-600 font-medium transition">Overview</a>
                     <a href="#syntax" class="text-slate-600 hover:text-blue-600 font-medium transition">Syntax</a>
                     <a href="#variables" class="text-slate-600 hover:text-blue-600 font-medium transition">Variables</a>
                     <a href="#functions" class="text-slate-600 hover:text-blue-600 font-medium transition">Functions</a>
+                    <a href="#datastructures" class="text-slate-600 hover:text-blue-600 font-medium transition">Data Structures</a>
                 </div>
             </div>
         </div>
@@ -226,7 +227,7 @@
         </section>
 
         <!-- Built-in Functions -->
-        <section id="functions" class="scroll-mt-20">
+        <section id="functions" class="mb-16 scroll-mt-20">
             <div class="flex items-center mb-6">
                 <div class="bg-orange-100 p-3 rounded-lg mr-4 text-orange-600">
                     <i class="fas fa-tools text-2xl"></i>
@@ -286,6 +287,145 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- DATA STRUCTURES SECTION (UPDATED from PPT) -->
+        <section id="datastructures" class="mb-16 scroll-mt-20">
+            <div class="flex items-center mb-6">
+                <div class="bg-red-100 p-3 rounded-lg mr-4 text-red-600">
+                    <i class="fas fa-layer-group text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-slate-900">1.2 Python Data Structures</h2>
+            </div>
+            
+            <!-- Intro Note -->
+            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8">
+                <p class="text-sm text-yellow-800">
+                    <strong>Difference vs. Data Types:</strong> Data Types (int, float) are atomic (single values). Data Structures are collections that store multiple items. Strings are considered collections of characters!
+                </p>
+            </div>
+
+            <!-- 1. Strings -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-8 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4 text-slate-100 text-6xl opacity-10 font-black select-none">" "</div>
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-2xl font-bold text-slate-800">a. Strings</h3>
+                    <code class="bg-slate-100 text-slate-600 px-2 py-1 rounded text-sm">"Hello"</code>
+                </div>
+                <p class="text-sm text-slate-600 mb-4">Defined with single <code>' '</code> or double <code>" "</code> quotes. Immutable sequence of characters.</p>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-bold text-slate-700 text-sm mb-2">Indexing & Slicing</h4>
+                        <p class="text-xs text-slate-500 mb-2">Format: <code>[start : stop : step]</code>. Note: Stop is NOT inclusive.</p>
+                        <div class="bg-gray-900 rounded p-3 font-mono text-xs text-white">
+                            s = <span class="text-green-300">"PYTHON"</span><br>
+                            <span class="text-yellow-300">print</span>(s[<span class="text-blue-300">0</span>])    <span class="text-gray-500"># 'P'</span><br>
+                            <span class="text-yellow-300">print</span>(s[<span class="text-blue-300">-1</span>])   <span class="text-gray-500"># 'N' (Negative Index)</span><br>
+                            <span class="text-yellow-300">print</span>(s[<span class="text-blue-300">0</span>:<span class="text-blue-300">2</span>])  <span class="text-gray-500"># 'PY' (Stops before 2)</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-700 text-sm mb-2">Key Methods</h4>
+                        <ul class="text-xs text-slate-600 space-y-1 font-mono">
+                            <li><span class="text-purple-600">len</span>(s) -> Count characters</li>
+                            <li>s.<span class="text-purple-600">upper</span>() -> "PYTHON"</li>
+                            <li>s.<span class="text-purple-600">lower</span>() -> "python"</li>
+                            <li>s.<span class="text-purple-600">title</span>() -> "Python" (Capitalize 1st letter)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                
+                <!-- 2. Lists -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 text-slate-100 text-6xl opacity-10 font-black select-none">[]</div>
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-2xl font-bold text-slate-800">b. Lists</h3>
+                        <code class="bg-slate-100 text-slate-600 px-2 py-1 rounded text-sm">lst = []</code>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-3">Ordered, Mutable, Allows Duplicates. Can contain mixed types (int, str, nested lists).</p>
+                    
+                    <h4 class="font-bold text-slate-700 text-sm mb-2">Methods</h4>
+                    <div class="bg-gray-900 rounded p-3 font-mono text-xs text-white space-y-2">
+                        <div>
+                            <span class="text-gray-500"># Add to end</span><br>
+                            lst.<span class="text-yellow-300">append</span>(<span class="text-green-300">"Item"</span>)
+                        </div>
+                        <div>
+                            <span class="text-gray-500"># Remove specific item</span><br>
+                            lst.<span class="text-yellow-300">remove</span>(<span class="text-green-300">"Item"</span>)
+                        </div>
+                        <div>
+                            <span class="text-gray-500"># Remove at index (or last if empty)</span><br>
+                            lst.<span class="text-yellow-300">pop</span>(<span class="text-blue-300">1</span>)
+                        </div>
+                         <div>
+                            <span class="text-purple-400">len</span>(lst) <span class="text-gray-500"># Count items</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Tuples -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 text-slate-100 text-6xl opacity-10 font-black select-none">()</div>
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-2xl font-bold text-slate-800">c. Tuples</h3>
+                        <code class="bg-slate-100 text-slate-600 px-2 py-1 rounded text-sm">tup = ()</code>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-3"><strong>Immutable</strong> (Cannot change). More memory efficient & faster than lists.</p>
+                    
+                    <h4 class="font-bold text-slate-700 text-sm mb-2">Methods</h4>
+                    <div class="bg-gray-900 rounded p-3 font-mono text-xs text-white space-y-1">
+                        <div><span class="text-purple-400">len</span>(tup)</div>
+                        <div><span class="text-purple-400">max</span>(tup) / <span class="text-purple-400">min</span>(tup)</div>
+                        <div>tup.<span class="text-yellow-300">index</span>(<span class="text-blue-300">10</span>) <span class="text-gray-500"># Find position</span></div>
+                        <div>tup.<span class="text-yellow-300">count</span>(<span class="text-blue-300">10</span>) <span class="text-gray-500"># How many times?</span></div>
+                    </div>
+                    <p class="text-xs text-orange-600 mt-2 font-semibold">Note: Cannot use append/remove!</p>
+                </div>
+
+                <!-- 4. Dictionaries -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 text-slate-100 text-6xl opacity-10 font-black select-none">{}</div>
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-2xl font-bold text-slate-800">d. Dictionaries</h3>
+                        <code class="bg-slate-100 text-slate-600 px-2 py-1 rounded text-sm">{k:v}</code>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-3">Key-Value pairs. Keys must be immutable (str, int). Access via <code>dict['key']</code>.</p>
+                    
+                    <h4 class="font-bold text-slate-700 text-sm mb-2">Methods</h4>
+                    <div class="bg-gray-900 rounded p-3 font-mono text-xs text-white space-y-1">
+                         <div>
+                            <span class="text-gray-500"># Merge new keys in</span><br>
+                            d.<span class="text-yellow-300">update</span>({<span class="text-green-300">"new"</span>: <span class="text-blue-300">1</span>})
+                        </div>
+                        <div class="mt-2">d.<span class="text-yellow-300">keys</span>() <span class="text-gray-500"># List of keys</span></div>
+                        <div>d.<span class="text-yellow-300">values</span>() <span class="text-gray-500"># List of values</span></div>
+                    </div>
+                </div>
+
+                <!-- 5. Sets -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 text-slate-100 text-6xl opacity-10 font-black select-none">{}</div>
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-2xl font-bold text-slate-800">e. Sets</h3>
+                        <code class="bg-slate-100 text-slate-600 px-2 py-1 rounded text-sm">s = {}</code>
+                    </div>
+                    <p class="text-sm text-slate-600 mb-3">Unordered, No Duplicates, No Indexing. Great for removing duplicates.</p>
+                    
+                    <h4 class="font-bold text-slate-700 text-sm mb-2">Methods</h4>
+                    <div class="bg-gray-900 rounded p-3 font-mono text-xs text-white space-y-1">
+                        <div>s.<span class="text-yellow-300">add</span>(<span class="text-blue-300">5</span>)</div>
+                        <div>s.<span class="text-yellow-300">remove</span>(<span class="text-blue-300">5</span>)</div>
+                        <div><span class="text-purple-400">print</span>(<span class="text-blue-300">5</span> <span class="text-purple-400">in</span> s) <span class="text-gray-500"># True/False</span></div>
+                    </div>
+                </div>
+
+            </div>
+
         </section>
 
     </div>

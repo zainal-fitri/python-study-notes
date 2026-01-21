@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Practical Exercises</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; }
+        code { font-family: 'Fira Code', monospace; }
+        
+        /* Custom Scrollbar */
+        .code-scroll::-webkit-scrollbar { height: 8px; }
+        .code-scroll::-webkit-scrollbar-track { background: #2d3748; }
+        .code-scroll::-webkit-scrollbar-thumb { background: #4a5568; border-radius: 4px; }
+        
+        /* Animation for details/summary */
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <nav class="sticky top-0 z-50 bg-white shadow-sm border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-laptop-code text-3xl text-green-600 mr-3"></i>
+                    <span class="font-bold text-xl tracking-tight text-slate-900">Python Basics <span class="text-slate-400 font-normal ml-2">Workbook</span></span>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-blue-600 hover:text-blue-800 font-medium transition"><i class="fas fa-arrow-left mr-2"></i>Back to Reference</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-slate-900 mb-4">Practical Exercises</h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto">Apply what you've learned. Try to solve each challenge before clicking "Show Solution".</p>
+        </div>
+
+        <section class="mb-12">
+            <div class="flex items-center mb-6">
+                <div class="bg-indigo-100 p-2 rounded-lg mr-3 text-indigo-600"><i class="fas fa-pencil-alt text-xl"></i></div>
+                <h2 class="text-2xl font-bold text-slate-900">1. Variables & Syntax</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+                    <h3 class="font-bold text-slate-800 mb-2">Ex 1: Variable Swap</h3>
+                    <p class="text-sm text-slate-600 mb-4">Create two variables, <code>a = 5</code> and <code>b = 10</code>. Swap their values so <code>a</code> becomes 10 and <code>b</code> becomes 5, then print them.</p>
+                    
+                    <details class="group">
+                        <summary class="cursor-pointer bg-slate-50 hover:bg-slate-100 border border-slate-200 text-slate-600 rounded-lg px-4 py-2 text-sm font-medium transition flex items-center justify-between">
+                            <span>Show Solution</span>
+                            <i class="fas fa-chevron-down transform group-open:rotate-180 transition"></i>
+                        </summary>
+                        <div class="mt-4 bg-gray-900 rounded-lg p-4 font-mono text-sm text-white border-l-4 border-green-500">
+                            a = 5<br>
+                            b = 10<br><br>
+                            <span class="text-gray-500"># The Pythonic way to swap</span><br>
+                            a, b = b, a<br><br>
+                            <span class="text-yellow-300">print</span>(a)<br>
+                            <span class="text-yellow-300">print</span>(b)
+                        </div>
+                    </details>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+                    <h3 class="font-bold text-slate-800 mb-2">Ex 2: User Greeting</h3>
+                    <p class="text-sm text-slate-600 mb-4">Ask the user for their name and their age. Print a sentence saying "Hello [Name], you will be [Age+1] next year."</p>
+                    
+                    <details class="group">
+                        <summary class="cursor-pointer bg-slate-50 hover:bg-slate-100 border border-slate-200 text-slate-600 rounded-lg px-4 py-2 text-sm font-medium transition flex items-center justify-between">
+                            <span>Show Solution</span>
+                            <i class="fas fa-chevron-down transform group-open:rotate-180 transition"></i>
+                        </summary>
+                        <div class="mt-4 bg-gray-900 rounded-lg p-4 font-mono text-sm text-white border-l-4 border-green-500">
+                            name = <span class="text-yellow-300">input</span>(<span class="text-green-300">"Name: "</span>)<br>
+                            age = <span class="text-yellow-300">int</span>(<span class="text-yellow-300">input</span>(<span class="text-green-300">"Age: "</span>))<br><br>
+                            <span class="text-gray-500"># Convert to string to concatenate or use f-string</span><br>
+                            <span class="text-yellow-300">print</span>(<span class="text-green-300">"Hello "</span> + name + <span class="text-green-300">", you will be "</span> + <span class="text-yellow-300">str</span>(age + 1))
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <div class="flex items-center mb-6">
+                <div class="bg-red-100 p-2 rounded-lg mr-3 text-red-600"><i class="fas fa-layer-group text-xl"></i></div>
+                <h2 class="text-2xl font-bold text-slate-900">2. Data Structures</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+                    <h3 class="font-bold text-slate-800 mb-2">Ex 3: List Manipulation</h3>
+                    <p class="text-sm text-slate-600 mb-4">Create a list of 3 fruits. Add a 4th fruit. Remove the 2nd fruit. Print the final list length.</p>
+                    
+                    <details class="group">
+                        <summary class="cursor-pointer bg-slate-50 hover:bg-slate-100 border border-slate-200 text-slate-600 rounded-lg px-4 py-2 text-sm font-medium transition flex items-center justify-between">
+                            <span>Show Solution</span>
+                            <i class="fas fa-chevron-down transform group-open:rotate-180 transition"></i>
+                        </summary>
+                        <div class="mt-4 bg-gray-900 rounded-lg p-4 font-mono text-sm text-white border-l-4 border-green-500">
+                            fruits = [<span class="text-green-300">"Apple"</span>, <span class="text-green-300">"Banana"</span>, <span class="text-green-300">"Cherry"</span>]<br>
+                            fruits.<span class="text-yellow-300">append</span>(<span class="text-green-300">"Date"</span>)<br>
+                            fruits.<span class="text-yellow-300">pop</span>(1) <span class="text-gray-500"># Removes index 1 (Banana)</span><br>
+                            <span class="text-yellow-300">print</span>(<span class="text-purple-400">len</span>(fruits))
+                        </div>
+                    </details>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+                    <h3 class="font-bold text-slate-800 mb-2">Ex 4: Dictionary Lookup</h3>
+                    <p class="text-sm text-slate-600 mb-4">Create a dictionary representing a car with keys: <code>brand</code>, <code>model</code>, <code>year</code>. Print the model.</p>
+                    
+                    <details class="group">
+                        <summary class="cursor-pointer bg-slate-50 hover:bg-slate-100 border border-slate-200 text-slate-600 rounded-lg px-4 py-2 text-sm font-medium transition flex items-center justify-between">
+                            <span>Show Solution</span>
+                            <i class="fas fa-chevron-down transform group-open:rotate-180 transition"></i>
+                        </summary>
+                        <div class="mt-4 bg-gray-900 rounded-lg p-4 font-mono text-sm text-white border-l-4 border-green-500">
+                            car = {<br>
+                            &nbsp;&nbsp;<span class="text-green-300">"brand"</span>: <span class="text-green-300">"Toyota"</span>,<br>
+                            &nbsp;&nbsp;<span class="text-green-300">"model"</span>: <span class="text-green-300">"Corolla"</span>,<br>
+                            &nbsp;&nbsp;<span class="text-green-300">"year"</span>: <span class="text-blue-300">2022</span><br>
+                            }<br>
+                            <span class="text-yellow-300">print</span>(car[<span class="text-green-300">"model"</span>])
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <div class="flex items-center mb-6">
+                <div class="bg-fuchsia-100 p-2 rounded-lg mr-3 text-fuchsia-600"><i class="fas fa-project-diagram text-xl"></i></div>
+                <h2 class="text-2xl font-bold text-slate-900">3. Control Structures & Loops</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+                    <h3 class="font-bold text-slate-800 mb-2">Ex 5: Even or Odd?</h3>
+                    <p class="text-sm text-slate-600 mb-4">Ask the user for a number. Use an <code>if/else</code> statement to check if the number is even or odd (hint: use Modulus <code>%</code>).</p>
+                    
+                    <details class="group">
+                        <summary class="cursor-pointer bg-slate-50 hover:bg-slate-100 border border-slate-200 text-slate-600 rounded-lg px-4 py-2 text-sm font-medium transition flex items-center justify-between">
+                            <span>Show Solution</span>
+                            <i class="fas fa-chevron-down transform group-open:rotate-180 transition"></i>
+                        </summary>
+                        <div class="mt-4 bg-gray-900 rounded-lg p-4 font-mono text-sm text-white border-l-4 border-green-500">
+                            num = <span class="text-yellow-300">int</span>(<span class="text-yellow-300">input</span>(<span class="text-green-300">"Enter number: "</span>))<br><br>
+                            <span class="text-pink-400">if</span> num % <span class="text-blue-300">2</span> == <span class="text-blue-300">0</span>:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-yellow-300">print</span>(<span class="text-green-300">"Even"</span>)<br>
+                            <span class="text-pink-400">else</span>:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-yellow-300">print</span>(<span class="text-green-300">"Odd"</span>)
+                        </div>
+                    </details>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+                    <h3 class="font-bold text-slate-800 mb-2">Ex 6: Sum of List</h3>
+                    <p class="text-sm text-slate-600 mb-4">Given a list <code>nums = [10, 20, 30]</code>, write a <strong>for loop</strong> to calculate the total sum manually (without using <code>sum()</code>).</p>
+                    
+                    <details class="group">
+                        <summary class="cursor-pointer bg-slate-50 hover:bg-slate-100 border border-slate-200 text-slate-600 rounded-lg px-4 py-2 text-sm font-medium transition flex items-center justify-between">
+                            <span>Show Solution</span>
+                            <i class="fas fa-chevron-down transform group-open:rotate-180 transition"></i>
+                        </summary>
+                        <div class="mt-4 bg-gray-900 rounded-lg p-4 font-mono text-sm text-white border-l-4 border-green-500">
+                            nums = [<span class="text-blue-300">10</span>, <span class="text-blue-300">20</span>, <span class="text-blue-300">30</span>]<br>
+                            total = <span class="text-blue-300">0</span><br><br>
+                            <span class="text-pink-400">for</span> n <span class="text-pink-400">in</span> nums:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;total += n<br><br>
+                            <span class="text-yellow-300">print</span>(<span class="text-green-300">"Sum is:"</span>, total)
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <div class="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl shadow-lg p-8 text-white relative overflow-hidden">
+                <i class="fas fa-trophy absolute -right-6 -bottom-6 text-9xl text-white opacity-10"></i>
+                <h2 class="text-2xl font-bold mb-4">Final Challenge: Simple Calculator</h2>
+                <p class="mb-6 opacity-90 max-w-2xl">Combine everything! Write a program that takes two numbers and an operator (+, -, *, /) from the user, performs the math, and prints the result.</p>
+                
+                <details class="group">
+                    <summary class="inline-block cursor-pointer bg-white/20 hover:bg-white/30 border border-white/40 text-white rounded-lg px-6 py-3 font-semibold transition backdrop-blur-sm">
+                        <span>Reveal Solution Code</span>
+                    </summary>
+                    <div class="mt-6 bg-slate-900/50 rounded-xl p-6 font-mono text-sm text-slate-200 border border-slate-700 backdrop-blur-sm shadow-inner">
+                        n1 = <span class="text-yellow-300">float</span>(<span class="text-yellow-300">input</span>(<span class="text-green-300">"First number: "</span>))<br>
+                        op = <span class="text-yellow-300">input</span>(<span class="text-green-300">"Operator (+, -, *, /): "</span>)<br>
+                        n2 = <span class="text-yellow-300">float</span>(<span class="text-yellow-300">input</span>(<span class="text-green-300">"Second number: "</span>))<br><br>
+                        
+                        <span class="text-pink-400">if</span> op == <span class="text-green-300">"+"</span>:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-yellow-300">print</span>(n1 + n2)<br>
+                        <span class="text-pink-400">elif</span> op == <span class="text-green-300">"-"</span>:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-yellow-300">print</span>(n1 - n2)<br>
+                        <span class="text-pink-400">elif</span> op == <span class="text-green-300">"*"</span>:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-yellow-300">print</span>(n1 * n2)<br>
+                        <span class="text-pink-400">elif</span> op == <span class="text-green-300">"/"</span>:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-pink-400">if</span> n2 != 0:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-yellow-300">print</span>(n1 / n2)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-pink-400">else</span>:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-yellow-300">print</span>(<span class="text-green-300">"Cannot divide by zero"</span>)<br>
+                        <span class="text-pink-400">else</span>:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-yellow-300">print</span>(<span class="text-green-300">"Invalid operator"</span>)
+                    </div>
+                </details>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

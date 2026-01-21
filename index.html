@@ -30,7 +30,6 @@
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-    <!-- Navbar -->
     <nav class="sticky top-0 z-50 bg-white shadow-sm border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
@@ -45,6 +44,7 @@
                     <a href="#functions" class="text-slate-600 hover:text-blue-600 font-medium transition">Functions</a>
                     <a href="#datastructures" class="text-slate-600 hover:text-blue-600 font-medium transition">Data Structures</a>
 					<a href="#operators" class="text-slate-600 hover:text-blue-600 font-medium transition">Operators</a>
+                    <a href="#controlflow" class="text-slate-600 hover:text-blue-600 font-medium transition">Control Flow</a>
                 </div>
             </div>
         </div>
@@ -52,7 +52,6 @@
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         
-        <!-- General Description -->
         <section id="intro" class="mb-16 scroll-mt-20">
             <div class="flex items-center mb-6">
                 <div class="bg-blue-100 p-3 rounded-lg mr-4 text-blue-600">
@@ -89,7 +88,6 @@
             </div>
         </section>
 
-        <!-- Identifiers & Syntax -->
         <section id="syntax" class="mb-16 scroll-mt-20">
             <div class="flex items-center mb-6">
                 <div class="bg-indigo-100 p-3 rounded-lg mr-4 text-indigo-600">
@@ -100,7 +98,6 @@
 
             <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
                 
-                <!-- Identifier Rules -->
                 <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
                     <h3 class="text-xl font-bold mb-4 text-slate-800">Naming Rules (Identifiers)</h3>
                     <ul class="space-y-3 text-sm text-slate-600">
@@ -116,7 +113,6 @@
                     </div>
                 </div>
 
-                <!-- Keywords -->
                 <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
                     <h3 class="text-xl font-bold mb-4 text-slate-800">Keywords (Reserved Words)</h3>
                     <p class="text-slate-600 mb-4 text-sm">Words that have special meaning in Python. You <strong>cannot</strong> use these as variable names.</p>
@@ -125,7 +121,6 @@
                     </div>
                 </div>
 
-                <!-- Indentation -->
                 <div class="col-span-1 lg:col-span-2 bg-white rounded-xl shadow-sm border border-slate-200 p-6">
                     <h3 class="text-xl font-bold mb-4 text-slate-800">Indentation & Structure</h3>
                     <div class="grid md:grid-cols-2 gap-8">
@@ -142,7 +137,6 @@
                         <div class="relative bg-gray-900 rounded-lg p-4 font-mono text-sm leading-relaxed">
                             <div class="text-purple-400">if <span class="text-blue-300">5</span> > <span class="text-blue-300">2</span>:</div>
                             
-                            <!-- Visual Indentation Guide -->
                             <div class="absolute left-4 top-10 bottom-8 w-8 border-l border-b border-gray-600 opacity-50 pointer-events-none"></div>
                             
                             <div class="pl-8 text-green-400"><span class="text-gray-500 select-none">....</span>print(<span class="text-yellow-300">"Inside the block"</span>)</div>
@@ -153,7 +147,6 @@
                     </div>
                 </div>
 
-                <!-- Multi-line Statements -->
                 <div class="col-span-1 lg:col-span-2 bg-white rounded-xl shadow-sm border border-slate-200 p-6">
                     <h3 class="text-xl font-bold mb-4 text-slate-800">Multi-line Statements</h3>
                     <div class="grid md:grid-cols-2 gap-4">
@@ -178,7 +171,6 @@
             </div>
         </section>
 
-        <!-- Variables -->
         <section id="variables" class="mb-16 scroll-mt-20">
             <div class="flex items-center mb-6">
                 <div class="bg-teal-100 p-3 rounded-lg mr-4 text-teal-600">
@@ -228,7 +220,6 @@
 			
         </section>
 
-        <!-- Built-in Functions -->
         <section id="functions" class="mb-16 scroll-mt-20">
             <div class="flex items-center mb-6">
                 <div class="bg-orange-100 p-3 rounded-lg mr-4 text-orange-600">
@@ -238,7 +229,6 @@
             </div>
 
             <div class="grid md:grid-cols-2 gap-6">
-                <!-- print() -->
                 <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:border-blue-300 transition-colors">
                     <div class="flex justify-between items-start mb-4">
                         <h3 class="text-xl font-bold text-slate-800 font-mono">print(...)</h3>
@@ -251,7 +241,6 @@
                     </div>
                 </div>
 
-                <!-- input() -->
                 <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:border-blue-300 transition-colors">
                     <div class="flex justify-between items-start mb-4">
                         <h3 class="text-xl font-bold text-slate-800 font-mono">input(...)</h3>
@@ -263,7 +252,6 @@
                     </div>
                 </div>
 
-                <!-- type() -->
                 <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:border-blue-300 transition-colors">
                     <div class="flex justify-between items-start mb-4">
                         <h3 class="text-xl font-bold text-slate-800 font-mono">type(...)</h3>
@@ -276,7 +264,6 @@
                     </div>
                 </div>
 
-                 <!-- Type Casting -->
                  <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 hover:border-blue-300 transition-colors">
                     <div class="flex justify-between items-start mb-4">
                         <h3 class="text-xl font-bold text-slate-800 font-mono">int() / str()</h3>
@@ -291,7 +278,6 @@
             </div>
         </section>
 
-        <!-- DATA STRUCTURES SECTION (UPDATED from PPT) -->
         <section id="datastructures" class="mb-16 scroll-mt-20">
             <div class="flex items-center mb-6">
                 <div class="bg-red-100 p-3 rounded-lg mr-4 text-red-600">
@@ -300,14 +286,12 @@
                 <h2 class="text-3xl font-bold text-slate-900">1.2 Python Data Structures</h2>
             </div>
             
-            <!-- Intro Note -->
             <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8">
                 <p class="text-sm text-yellow-800">
                     <strong>Difference vs. Data Types:</strong> Data Types (int, float) are atomic (single values). Data Structures are collections that store multiple items. Strings are considered collections of characters!
                 </p>
             </div>
 
-            <!-- 1. Strings -->
             <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-8 relative overflow-hidden">
                 <div class="absolute top-0 right-0 p-4 text-slate-100 text-6xl opacity-10 font-black select-none">" "</div>
                 <div class="flex items-center justify-between mb-4">
@@ -341,7 +325,6 @@
 
             <div class="grid md:grid-cols-2 gap-6">
                 
-                <!-- 2. Lists -->
                 <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 relative overflow-hidden">
                     <div class="absolute top-0 right-0 p-4 text-slate-100 text-6xl opacity-10 font-black select-none">[]</div>
                     <div class="flex items-center justify-between mb-4">
@@ -370,7 +353,6 @@
                     </div>
                 </div>
 
-                <!-- 3. Tuples -->
                 <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 relative overflow-hidden">
                     <div class="absolute top-0 right-0 p-4 text-slate-100 text-6xl opacity-10 font-black select-none">()</div>
                     <div class="flex items-center justify-between mb-4">
@@ -389,7 +371,6 @@
                     <p class="text-xs text-orange-600 mt-2 font-semibold">Note: Cannot use append/remove!</p>
                 </div>
 
-                <!-- 4. Dictionaries -->
                 <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 relative overflow-hidden">
                     <div class="absolute top-0 right-0 p-4 text-slate-100 text-6xl opacity-10 font-black select-none">{}</div>
                     <div class="flex items-center justify-between mb-4">
@@ -409,7 +390,6 @@
                     </div>
                 </div>
 
-                <!-- 5. Sets -->
                 <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 relative overflow-hidden">
                     <div class="absolute top-0 right-0 p-4 text-slate-100 text-6xl opacity-10 font-black select-none">{}</div>
                     <div class="flex items-center justify-between mb-4">
@@ -429,7 +409,6 @@
             </div>
 
         </section>
-        <!-- OPERATORS SECTION (ENHANCED) -->
         <section id="operators" class="mb-16 scroll-mt-20">
             <div class="flex items-center mb-6">
                 <div class="bg-emerald-100 p-3 rounded-lg mr-4 text-emerald-600">
@@ -440,7 +419,6 @@
 
             <div class="space-y-6">
                 
-                <!-- Arithmetic -->
                 <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
                     <div class="bg-slate-50 px-6 py-3 border-b border-slate-200 font-bold text-slate-800 flex justify-between items-center">
                         <span>a. Arithmetic Operators</span>
@@ -457,7 +435,6 @@
                             <div class="p-3 border rounded-lg text-center bg-blue-50/50"><code class="text-xl font-bold text-purple-600 block mb-1">//</code>Floor Div</div>
                         </div>
                         
-                        <!-- Tricky Arithmetic Note -->
                         <div class="bg-slate-900 rounded-lg p-4 font-mono text-sm text-gray-300">
                             <div class="grid md:grid-cols-2 gap-4">
                                 <div>
@@ -474,7 +451,6 @@
                     </div>
                 </div>
 
-                <!-- Comparison -->
                 <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
                     <div class="bg-slate-50 px-6 py-3 border-b border-slate-200 font-bold text-slate-800 flex justify-between items-center">
                         <span>b. Comparison Operators</span>
@@ -495,10 +471,8 @@
                     </div>
                 </div>
 
-                <!-- Logical & Assignment Grid -->
                 <div class="grid md:grid-cols-2 gap-6">
                     
-                    <!-- Logical -->
                     <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
                         <div class="flex justify-between items-center mb-4">
                              <h3 class="font-bold text-slate-800">d. Logical Operators</h3>
@@ -520,7 +494,6 @@
                         </ul>
                     </div>
 
-                    <!-- Assignment -->
                     <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
                         <div class="flex justify-between items-center mb-4">
                              <h3 class="font-bold text-slate-800">c. Assignment</h3>
@@ -543,8 +516,7 @@
                     </div>
                 </div>
 
-                <!-- Membership & Identity -->
-                 <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
                     <div class="bg-slate-50 px-6 py-3 border-b border-slate-200 font-bold text-slate-800">e. Membership & f. Identity</div>
                     <div class="p-6 grid md:grid-cols-2 gap-6">
                         <div>
@@ -566,7 +538,6 @@
                     </div>
                 </div>
                 
-                <!-- Additional Notes (Keep mostly same but improved styling) -->
                 <div class="bg-slate-800 rounded-xl p-6 text-slate-200 border border-slate-700 shadow-lg">
                      <h3 class="font-bold text-white mb-4 flex items-center">
                         <i class="fas fa-lightbulb text-yellow-400 mr-2"></i> Pro Tips
@@ -599,6 +570,97 @@
 
             </div>
         </section>
+
+        <section id="controlflow" class="mb-16 scroll-mt-20">
+            <div class="flex items-center mb-6">
+                <div class="bg-fuchsia-100 p-3 rounded-lg mr-4 text-fuchsia-600">
+                    <i class="fas fa-project-diagram text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-slate-900">Control Structures & Loops</h2>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 mb-8">
+                <h3 class="text-xl font-bold mb-6 text-slate-800 border-b pb-2">1. Decision Making (Conditionals)</h3>
+                
+                <div class="grid lg:grid-cols-3 gap-6">
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                        <h4 class="font-bold text-slate-700 mb-2">a. If Statement</h4>
+                        <p class="text-xs text-slate-600 mb-3">Runs the block only if the condition is True.</p>
+                        <div class="bg-gray-900 rounded p-3 font-mono text-xs text-white">
+                            age = <span class="text-blue-300">20</span><br>
+                            <span class="text-pink-400">if</span> age >= <span class="text-blue-300">18</span>:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-yellow-300">print</span>(<span class="text-green-300">"Adult"</span>)
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                        <h4 class="font-bold text-slate-700 mb-2">b. If...Else</h4>
+                        <p class="text-xs text-slate-600 mb-3">Runs one block if True, another if False.</p>
+                        <div class="bg-gray-900 rounded p-3 font-mono text-xs text-white">
+                            <span class="text-pink-400">if</span> age >= <span class="text-blue-300">18</span>:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-yellow-300">print</span>(<span class="text-green-300">"Adult"</span>)<br>
+                            <span class="text-pink-400">else</span>:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-yellow-300">print</span>(<span class="text-green-300">"Minor"</span>)
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                        <h4 class="font-bold text-slate-700 mb-2">c. If...Elif...Else</h4>
+                        <p class="text-xs text-slate-600 mb-3">Checks multiple conditions in sequence.</p>
+                        <div class="bg-gray-900 rounded p-3 font-mono text-xs text-white">
+                            <span class="text-pink-400">if</span> score >= <span class="text-blue-300">90</span>:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;grade = <span class="text-green-300">"A"</span><br>
+                            <span class="text-pink-400">elif</span> score >= <span class="text-blue-300">80</span>:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;grade = <span class="text-green-300">"B"</span><br>
+                            <span class="text-pink-400">else</span>:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;grade = <span class="text-green-300">"F"</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold text-slate-800">2a. While Loop</h3>
+                        <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2 py-1 rounded">Condition Based</span>
+                    </div>
+                    <p class="text-slate-600 text-sm mb-4">Repeats a block of code as long as a condition is <code>True</code>.</p>
+                    <div class="bg-gray-900 rounded p-4 font-mono text-sm text-white mb-4">
+                        count = <span class="text-blue-300">0</span><br>
+                        <span class="text-pink-400">while</span> count < <span class="text-blue-300">5</span>:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-yellow-300">print</span>(count)<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;count += <span class="text-blue-300">1</span>
+                    </div>
+                    <div class="bg-red-50 border-l-4 border-red-400 p-3 text-xs text-red-700">
+                        <strong>Caution:</strong> Ensure the condition eventually becomes False to avoid infinite loops!
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-xl font-bold text-slate-800">2b. For Loop</h3>
+                        <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">Iterator Based</span>
+                    </div>
+                    <p class="text-slate-600 text-sm mb-4">Iterates over a sequence (list, string, or range).</p>
+                    
+                    <div class="space-y-3">
+                        <div class="bg-gray-900 rounded p-3 font-mono text-xs text-white">
+                            <span class="text-gray-500"># Iterate over list</span><br>
+                            fruits = [<span class="text-green-300">"Apple"</span>, <span class="text-green-300">"Banana"</span>]<br>
+                            <span class="text-pink-400">for</span> fruit <span class="text-pink-400">in</span> fruits:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-yellow-300">print</span>(fruit)
+                        </div>
+                        <div class="bg-gray-900 rounded p-3 font-mono text-xs text-white">
+                            <span class="text-gray-500"># Iterate using range()</span><br>
+                            <span class="text-pink-400">for</span> i <span class="text-pink-400">in</span> <span class="text-yellow-300">range</span>(<span class="text-blue-300">5</span>):<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-yellow-300">print</span>(i) <span class="text-gray-500"># 0, 1, 2, 3, 4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
 
     <footer class="bg-slate-900 text-slate-400 py-8 mt-12">
